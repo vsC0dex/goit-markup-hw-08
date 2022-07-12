@@ -33,7 +33,7 @@
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   // align-items: center;
   // margin-right: 305px;
 }
@@ -50,6 +50,17 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+}
+
+.nav__mobile-menu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-flex;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
 }
 
 .menu__item:not(:last-child) {
@@ -77,6 +88,10 @@
   // display: flex;
   // align-items: center;
   // justify-content: center;
+}
+
+.menu.is-open{
+  display: block;
 }
 
 .mail {
