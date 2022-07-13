@@ -25,25 +25,25 @@
       <div class="header-container container">
         <nav class="nav">
           <a href="" lang="en" class="nav__logo logo link"><span class="half-logo">Web</span>Studio</a>
+          <ul class="menu list data-modal-mobile">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link link ">Студия</a>
+            </li>
+            <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link link current">Портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link link">Контакты</a>
+            </li>
+          </ul>
           <button type="button" class="nav__mobile-menu btn">
             <svg class="nav__mobile-menu-icon" width="40px" height="40px">
               <use href="./images/icons.svg#icon-mobile-menu"></use>
               <use href="./images/icons.svg#icon-mobile-menu-close"></use>
             </svg>
           </button>
-          <ul class="menu list">
-            <li class="menu__item">
-              <a href="./index.html" class="menu__link link current">Студия</a>
-            </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link link">Портфолио</a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="menu__link link">Контакты</a>
-            </li>
-          </ul>
         </nav>
-        <ul class="menu list">
+        <ul class="menu-contacts .is-hidden list">
           <li class="mail">
             <a href="mailto:info@devstudio.com" class="mail__link link">
               <svg class="mail__icon" width="16" height="12">
@@ -67,7 +67,7 @@
       <section class="portfolio-after-header section">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
-          <a href="./index.html" class="menu__link link">Студия</a>
+          <a href="./index.html" class=" link">Студия</a>
           <ul class="after-header-list portfolio list">
             <li class="after-header-item">
               <button type="button" class="secondary-btn btn">Все</button>

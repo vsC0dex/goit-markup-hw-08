@@ -3,7 +3,13 @@
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  @media screen and (min-width: 480px) {
+  @include mobile {
     max-width: 480px;
+  }
+  @include tablet{
+    max-width: 768px;
+  }
+  @include desktop{
+    max-width: 1200px;
   }
 }

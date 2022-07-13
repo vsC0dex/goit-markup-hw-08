@@ -28,6 +28,9 @@
   // width: 170px;
   width: 210px;
   height: 92px;
+  @include tablet{
+    width: 226px;
+  }
   // margin-left: 30px;
   // &:first-child {
   //   margin-left: 0;
