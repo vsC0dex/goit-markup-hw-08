@@ -6,10 +6,10 @@
   @include mobile {
     max-width: 480px;
   }
-  @include tablet{
+  @include tablet {
     max-width: 768px;
   }
-  @include desktop{
+  @include desktop {
     max-width: 1200px;
   }
 }
