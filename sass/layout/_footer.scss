@@ -8,38 +8,43 @@
   // display: flex;
   // align-items: baseline;
   display: flex;
-  gap: 60px;
-  flex-direction: column;
-  @include tablet{
+  @media screen and (max-width: 1199px) {
+    gap: 60px;
+  }
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+  }
+  @include desktop {
+    justify-content: space-between;
   }
 }
 
 .footer-list {
   font-style: normal;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-container__logo {
-  // display: block;
-  // margin-bottom: 20px;
-  // font-family: "Raleway";
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.19;
-  // letter-spacing: 0.03em;
-  // color: #ffffff;
-
   display: block;
   margin-bottom: 20px;
+  font-family: "Raleway";
   font-weight: 700;
-  font-size: 24px;
-  line-height: calc(28 / 24);
-  text-align: center;
+  font-size: 26px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    text-align: center;
+  }
 }
 
 .footer-list__item:not(:last-child) {
@@ -56,7 +61,7 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
-    }
+  }
 }
 
 .footer-list__mail-link,
@@ -76,7 +81,9 @@
 
 .footer-second-container {
   // margin-left: 70px;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-second-container__text {
@@ -119,7 +126,7 @@
   &:hover,
   &:focus {
     background-color: var(--accent-color);
-    }
+  }
 }
 
 .footer-soc__icon {
@@ -128,9 +135,10 @@
 
 .footer-mailing {
   // margin-left: auto;
-  text-align: center;
-  @include tablet{
+
+  @media screen and (max-width: 1199px) {
     width: 100%;
+    text-align: center;
   }
 }
 
@@ -146,8 +154,10 @@
 
 .footer-mailing__form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer-mailing__icon-telegram {
@@ -155,9 +165,6 @@
 }
 
 .footer-mailing__input {
-  margin-bottom: 20px;
-  // margin-bottom: 10px;
-
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -175,12 +182,18 @@
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus {
     border: 1px solid var(--accent-color);
-    }
+  }
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+  @include desktop {
+    width: 358px;
   }
 }
 
@@ -201,4 +214,7 @@
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  @include desktop {
+    margin-left: 12px;
+  }
 }

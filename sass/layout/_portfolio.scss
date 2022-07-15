@@ -4,7 +4,7 @@
   // margin: -15px;
   gap: 30px;
   justify-content: center;
-  @include tablet{
+  @include tablet {
     justify-content: start;
   }
 }
@@ -14,8 +14,11 @@
   // margin: 15px;
   border: 1px solid #eeeeee;
   @include tablet {
-      max-width: 354px;
-    }
+    width: 354px;
+  }
+  @include desktop {
+    width: 370px;
+  }
 }
 
 .portfolio-item-title {
@@ -75,4 +78,3 @@
 .portfolio-grid-container {
   padding: 20px 24px;
 }
-

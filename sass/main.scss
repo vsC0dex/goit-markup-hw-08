@@ -1,24 +1,23 @@
-@import './utils/vars';
-@import './utils/hidden';
-@import './utils/mixins';
+@import "./utils/vars";
+@import "./utils/hidden";
+@import "./utils/mixins";
 
-@import './base/common';
-@import './base/reset';
+@import "./base/common";
+@import "./base/reset";
 
-@import './components/container';
-@import './components/section';
-@import './components/logo';
-@import './components/btn';
+@import "./components/container";
+@import "./components/section";
+@import "./components/logo";
+@import "./components/btn";
 
-@import './layout/header';
-@import './layout/after-header';
-@import './layout/about';
-@import './layout/clients';
-@import './layout/footer';
-@import './layout/hero';
-@import './layout/portfolio';
-@import './layout/protfolio-afer-header';
-@import './layout/team';
-@import './layout/modal';
-
-
+@import "./layout/header";
+@import "./layout/after-header";
+@import "./layout/about";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/hero";
+@import "./layout/portfolio";
+@import "./layout/protfolio-afer-header";
+@import "./layout/team";
+@import "./layout/modal";
+@import "./layout/modal-mobile";

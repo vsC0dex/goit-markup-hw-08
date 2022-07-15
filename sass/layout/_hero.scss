@@ -1,6 +1,9 @@
 .hero {
   display: none;
   padding-top: 0;
+  @include desktop {
+    display: block;
+  }
 }
 
 .hero__container {
